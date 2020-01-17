@@ -26,16 +26,24 @@
             color: blue;
         }
 
-        .tekst_za_dopunu::after {
+        #first-div>p:nth-child(even)::after {
 
             content:" - NEW";
             color: yellow;
+
         }
 
-        .italic:hover {
+        #first-div> p:nth-child(odd)::after {
+            content:" - NEW";
+            color: yellow;
+            
+        }
+
+        body > p:last-of-type:hover {
 
             font-style: italic;
         }
+
 
     </style>
 </head>
@@ -48,8 +56,8 @@
     <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
     <div id="first-div">
         <h2>Subheading</h2>
-        <p class="tekst_za_dopunu">Paragraph 2</p>
-        <p class="tekst_za_dopunu">Paragraph 3</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
         <div id="second-div">
             <h3>Sub subheading</h3>
             <p>Paragraph 4</p>
@@ -60,7 +68,7 @@
         </div>
     </div>
     <p>Paragraph 9</p>
-    <p class="italic">Paragraph 10</p>
+    <p>Paragraph 10</p>
 </body>
 
 </html>
